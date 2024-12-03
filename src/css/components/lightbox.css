@@ -1,3 +1,46 @@
 /**
 * Lightbox
 */
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery img {
+    width: 150px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.lightbox {
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 80%;
+    position: relative;
+}
+
+.lightbox::backdrop {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.lightbox button {
+    display: block;
+    margin: 20px auto;
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
